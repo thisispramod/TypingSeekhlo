@@ -31,7 +31,7 @@ const Navbar = () => {
                             </svg>
                         </div>
                         <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-600">
-                            TypoMaster
+                            Typing Sikhlo
                         </span>
                     </div>
                     <div className="flex items-center gap-4">

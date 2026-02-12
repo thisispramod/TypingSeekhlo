@@ -13,13 +13,7 @@ const Home = () => {
                     <p className="text-lg text-slate-600 max-w-2xl mx-auto">
                         Practice touch typing in English and Hindi (Mangal InScript). Improve your WPM and Accuracy for competitive exams like SSC, CPCT, and Banking.
                     </p>
-                </div>
-
-                <div className="text-center mb-10">
-                    <a onClick={() => navigate('/game')} className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 md:py-4 md:text-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
-                        🎮 Play Typing Race Mode
-                    </a>
-                </div>
+                </div> 
 
                 <TypingArea />
 
