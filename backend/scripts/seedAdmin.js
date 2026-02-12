@@ -3,8 +3,8 @@ const db = require('../config/db');
 
 const seedAdmin = async () => {
     try {
-        const username = 'admin';
-        const password = 'admin123';
+        const username = 'itspramod19@gmail.com';
+        const password = 'PRAmod@1999';
         const saltRounds = 10;
 
         const hashedPassword = await bcrypt.hash(password, saltRounds);
@@ -13,10 +13,8 @@ const seedAdmin = async () => {
         const [rows] = await db.execute('SELECT * FROM admins WHERE username = ?', [username]);
 
         if (rows.length > 0) {
-            console.log('Admin user already exists. Updating password...');
             await db.execute('UPDATE admins SET password_hash = ? WHERE username = ?', [hashedPassword, username]);
         } else {
-            console.log('Creating admin user...');
             await db.execute('INSERT INTO admins (username, password_hash) VALUES (?, ?)', [username, hashedPassword]);
         }
 
